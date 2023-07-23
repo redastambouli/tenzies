@@ -1,0 +1,138 @@
+:root {
+  font-family: inter, sans-serif
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.tenzies {
+  background-color: #0B2434;
+  width: 510px;
+  height: 517px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  width: 470px;
+  height: 470px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playzone {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 18px;
+  margin-top: 22px;
+}
+
+.die {
+  width: 42px;
+  height: 50px;
+  box-shadow: 0px 2px 2px 0px #00000026;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  grid-template-rows: /*repeat(3,16px)*/ auto;
+  gap:0px;
+  justify-content: center;
+  
+}
+
+.die-green {
+  background-color: #59e391;
+}
+
+.die-white {
+  background-color: white;
+}
+
+.dot { 
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2B283A;
+  user-select: none;
+}
+
+.tenzies-heading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 29.93px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: #2B283A;
+  margin-top: -16px;
+}
+
+.tenzies-subheading {
+
+  width: 232.95px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #4A4E74;
+  margin-top: -14px;
+}
+
+button {
+  width: 110px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #5035FF;
+  color: white;
+  box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
+  border: none;
+  border-radius: 4px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.info-game {
+  color: #0B2434;
+}
+
+
+.status {
+  color: red;
+  font-weight: 700;
+  font-size:xx-large;
+  margin-top: -20px;
+  animation: zoomOutAndIn  2.5s infinite;
+}
+
+@keyframes zoomOutAndIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
